@@ -1,0 +1,91 @@
+{% include "layout/innerheader.html" %}
+{%load static%}
+
+<section>
+    <div class="container">
+        <div class="text-center">
+            <h4 class="mt-5 mb-5">Welcome Member Fill form</h4>
+            <div class="row">
+                <div class="col-lg-4">
+
+                </div>
+                <div class="col-lg-4">
+                    <form action="">
+                        {%csrf_token%}
+                        <div class="row mt-3 mb-3">
+                            <div class="col-lg-5">
+                                <p>First Name</p>
+                            </div>
+                            <div class="col-lg-7">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mt-3 mb-3">
+                            <div class="col-lg-5">
+                                <p>Last Name</p>
+                            </div>
+                            <div class="col-lg-7">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mt-3 mb-3">
+                            <div class="col-lg-5">
+                                <p>Email</p>
+                            </div>
+                            <div class="col-lg-7">
+                                <input type="email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mt-3 mb-3">
+                            <div class="col-lg-5">
+                                <p>Pin Code</p>
+                            </div>
+                            <div class="col-lg-7">
+                               <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mt-3 mb-3">
+                            <div class="col-lg-5">
+                                <p>City</p>
+                            </div>
+                            <div class="col-lg-7">
+                               <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mt-3 mb-3">
+                            <div class="col-lg-5">
+                                <p>Address</p>
+                            </div>
+                            <div class="col-lg-7">
+                                <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="row mt-3 mb-3">
+                            <div class="col-lg-5">
+                                <p>Get Coins</p>
+                            </div>
+                            <div class="col-lg-7">
+                                <select name="" id="" class="form-control">
+                                    <option value="">100 Coins Rs 200</option>
+                                    <option value="">300 Coins Rs 500</option>
+                                    <option value="">500 Coins Rs 600</option>
+                                    <option value="">700 Coins Rs 700</option>
+                                    <option value="">1000 Coins Rs 900</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="row mt-3 mb-3">
+                           
+                            <div class="col-lg-12">
+                               <input type="submit" class="form-control btn btn-primary" value="Proccess">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
+    </div>
+</section>
+{%include 'layout/footer.html'%}

@@ -1,0 +1,121 @@
+{% include "layout/header.html" %}
+{%load static%}
+<style>
+    table tr td 
+    {
+        font-size: 26p;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+</style>
+<section>
+    <div class="container">
+        <div class="text-center">
+            <h4 class="mt-5 mb-5">Request A Tutor</h4>
+        </div>
+            <center>
+            <table cellpadding="10">
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="name" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Location</td>
+                    <td><input type="text" name="location" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td><input type="number" name="number" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Details of Your requirement</td>
+                    <td>
+                        <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Subject</td>
+                    <td><input type="number" name="number" class="form-control" placeholder="Please Enter Subject"></td>
+                </tr>
+                <tr>
+                    <td>Level</td>
+                    <td><select name="" id="">
+                        <option value="">Select Level</option>
+                        <option value="">Select Level</option>
+                        <option value="">Select Level</option>
+                        <option value="">Select Level</option>
+                        <option value="">Select Level</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>I want</td>
+                    <td><select name="" id="">
+                        <option value="">Tutoring</option>
+                        <option value="">Assignment Help</option>
+                      
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Meeting</td>
+                    <td><select name="" id="">
+                        <option value="">Online</option>
+                        <option value="">Offline</option>
+                        <option value="">Any</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Budget<input type="number" name="number" class="form-control" placeholder="INR/DOllar/Euro"></td>
+                    <td>
+                    <select name="" id="" class="form-control>
+                        <option value="">fixed</option>
+                        <option value="">per week</option>
+                        <option value="">per hour</option>
+                        <option value="">per day</option>
+                        <option value="">per month</option>
+                        <option value="">per year</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender Preference</td>
+                    <td><select name="" id="" class="form-control>
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                        <option value="">Other</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Tutors Wanted</td>
+                    <td><select name="" id="" class="form-control>
+                        <option value="">Only One</option>
+                        <option value="">More Than One</option>
+                        <option value="">As Many As Possible</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>I need someone</td>
+                    <td><select name="" id="" class="form-control>
+                        <option value="">Part Time</option>
+                        <option value="">Full Time</option>
+                        <option value="">As Many As Possible</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>I can communicate with the tutor in (languages)</td>
+                    <td><input type="text" placeholder="Enter Language" class="form-control></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-primary">Post Requirement and Get Teachers</button>
+                    </td>
+                </tr>
+            </table></center>
+       
+
+    </div>
+</section>
+
+{%include "layout/footer.html"%}
