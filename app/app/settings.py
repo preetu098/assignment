@@ -117,7 +117,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[
-   STATIC_URL
+   os.path.join(BASE_DIR,STATIC_URL)
 ]
 STATIC_ROOT='/home/rawwieb8v1f2/public_html/workhelpnow/pro/static'
 # Default primary key field type
