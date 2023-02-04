@@ -119,7 +119,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS=[
    os.path.join(BASE_DIR,STATIC_URL)
 ]
-STATIC_ROOT='/home/rawwieb8v1f2/public_html/workhelpnow/pro/static'
+STATIC_ROOT='/home/rawwieb8v1f2/public_html/workhelpnow/static'
+
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
