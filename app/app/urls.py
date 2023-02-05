@@ -30,5 +30,5 @@ urlpatterns = [
     path('search/',views.searchRecord),
     path('requesttutor/',views.requestTutor),
     path('register/',views.register),
-    path('assign/',views.assignmenthelp)
+    path('assign/',views.assignmenthelp,name="assignmenthelp")
 ]
