@@ -1,7 +1,7 @@
 from django.urls import path,re_path
 from pro import views
 urlpatterns = [
-    path('',views.index),
+    path('',views.index,name="None"),
     re_path('dashboard/',views.dashboard),
     re_path('mobile/',views.mobile),
     path('pay/',views.payment),
