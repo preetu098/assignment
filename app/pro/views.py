@@ -1,19 +1,19 @@
 from .models import AssignmentHelp
 from django.conf import settings
-from django.shortcuts import render
+from django.shortcuts import render_to_response
 from django.core.mail import send_mail
 # home page
 def index(request):
-    return render(request,"index.html")
+    return render_to_response(request,"index.html")
 
 def payment(request):
-    return render(request,"Payment.html")
+    return render_to_response(request,"Payment.html")
 
 def requestTutor(request):
-    return render(request,"requestTutor.html")
+    return render_to_response(request,"requestTutor.html")
 
 def register(request):
-    return render(request,"register.html")
+    return render_to_response(request,"register.html")
 
 def assignmenthelp(request):
     secret=b'86di#w(le=dcg)&20e9+7#fuj73*um+19vdj@3$gz3rx+3vd=t'
@@ -60,9 +60,9 @@ def assignmenthelp(request):
             receipent=[xy]
             sender=settings.EMAIL_HOST_USER
             send_mail(subject,message,sender,receipent)
-            return render(request,"assignmenthelp.html",{'msj':'submitted succesfully'})
+            return render_to_response(request,"assignmenthelp.html",{'msj':'submitted succesfully'})
 
-    return render(request,"assignmenthelp.html")
+    return render_to_response(request,"assignmenthelp.html")
 
 #after Login Pages    
 
