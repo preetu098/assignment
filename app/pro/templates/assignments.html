@@ -1,0 +1,36 @@
+{% include "layout/header.html" %}
+{%load static%}
+
+
+<div class="container">
+    <div class="text-center">
+        <h1>All Assignments</h1>
+    </div>
+    {%for x in record%}
+    <div class="row mt-5">
+        <div class="col-lg-12">
+            <div class="card">
+                <h2 class="ms-3">{{x.name}}</h2>
+                <h2 class="text-danger ms-3">Budget:{{x.budget}}</h2>
+                <div class="row ms-3">
+                    <div class="col-lg-4">
+                        <p>Location:{{x.location}}</p>
+                <p>Subject:{{x.subject}}</p>
+                <p>Want:{{x.want}}</p>
+               
+                    </div>
+                    <div class="col-lg-8">
+                        <p>Details:{{x.details}}</p>
+                        <p>Language:{{x.language}}</p>
+                        <p>Work Mode:{{x.workmode}}</p>
+                        <p>Preference:{{x.gender}}</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    {%endfor%}
+</div>
+
+{%include 'layout/footer.html'%}

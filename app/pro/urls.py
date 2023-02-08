@@ -9,9 +9,11 @@ urlpatterns = [
     path('coins/',views.coinsform),
     path('coinstatus/',views.coinStatus),
     path('promote/',views.promote),
+     path('teachers/',views.teachers),
     path('invite/',views.invite),
     path('search/',views.searchRecord),
     path('requesttutor/',views.requestTutor),
     path('register/',views.register),
+    path('assignmets/',views.assignmets),
     path('assign/',views.assignmenthelp,name="assign")
 ]

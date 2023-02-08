@@ -6,8 +6,18 @@ from django.core.mail import send_mail
 def index(request):
     return render(request,"index.html")
 
+def assignmets(request):
+    a=AssignmentHelp.objects.all()
+    return render(request,"assignments.html",{'record':a})
+
+
 def payment(request):
     return render(request,"Payment.html")
+
+def teachers(request):
+    return render(request,"teachers.html")
+
+
 
 def requestTutor(request):
     return render(request,"requestTutor.html")
